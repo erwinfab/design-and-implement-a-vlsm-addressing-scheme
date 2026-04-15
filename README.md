@@ -64,7 +64,7 @@ I performed end-to-end connectivity tests to ensure the network was fully operat
 ## Deployment and Configuration Screenshots
 
 *(Upload your screenshots to GitHub and link them here)*
-* **Topology Overview**: `![Network Topology](<img width="690" height="267" alt="image" src="https://github.com/user-attachments/assets/7b02c7d9-27c1-4c7f-b05e-7bf3c1fd18b2" />
-)`
+* **Topology Overview**: `![Network Topology]<img width="690" height="267" alt="image" src="https://github.com/user-attachments/assets/7b02c7d9-27c1-4c7f-b05e-7bf3c1fd18b2" />
+
 * **CLI Verification**: `![Show IP Interface Brief](link_to_image)`
 * **Connectivity Test**: `![Ping Success](link_to_image)`
