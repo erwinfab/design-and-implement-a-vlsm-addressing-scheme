@@ -66,12 +66,12 @@ I performed end-to-end connectivity tests to ensure the network was fully operat
 ## Deployment and Configuration Screenshots
 
 * **Topology Overview**:
-* <img width="690" height="267" alt="image" src="https://github.com/user-attachments/assets/7b02c7d9-27c1-4c7f-b05e-7bf3c1fd18b2" />
+ <img width="690" height="267" alt="image" src="https://github.com/user-attachments/assets/7b02c7d9-27c1-4c7f-b05e-7bf3c1fd18b2" />
 
 * **Police Router CLI Verification**:
-* <img width="641" height="466" alt="image" src="https://github.com/user-attachments/assets/2ad1cf4d-97d7-4d01-b58e-fb010f2eabc7" />
+ <img width="641" height="466" alt="image" src="https://github.com/user-attachments/assets/2ad1cf4d-97d7-4d01-b58e-fb010f2eabc7" />
 
 * **Schools Router CLI Verification**:
-* <img width="643" height="465" alt="image" src="https://github.com/user-attachments/assets/c5a4028a-16f1-446d-83ce-a0833b34d803" />
+ <img width="643" height="465" alt="image" src="https://github.com/user-attachments/assets/c5a4028a-16f1-446d-83ce-a0833b34d803" />
 
 * **Connectivity Test**: `![Ping Success](link_to_image)`
