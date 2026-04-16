@@ -1,5 +1,6 @@
 # Design and Implement a VLSM Addressing Scheme (Cisco Packet Tracer)
 
+## Project Overview
 This project demonstrates the ability to design and implement a complex **Variable Length Subnet Mask (VLSM)** addressing scheme. The objective was to optimize a single network address (**10.1.1.0/24**) to meet the specific host requirements of a multi-departmental network while ensuring zero wasted address space between contiguous subnets.
 
 ## Environments and Technologies Used
