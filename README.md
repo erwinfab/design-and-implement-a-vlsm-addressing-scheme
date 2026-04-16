@@ -74,4 +74,7 @@ I performed end-to-end connectivity tests to ensure the network was fully operat
 * **Schools Router CLI Verification**:
  <img width="643" height="465" alt="image" src="https://github.com/user-attachments/assets/c5a4028a-16f1-446d-83ce-a0833b34d803" />
 
-* **Connectivity Test**: `![Ping Success](link_to_image)`
+* **Connectivity Test**:
+I performed ICMP echo requests (pings) between end-devices in geographically separated LANs. The successful 0% loss rate confirms that the VLSM subnets are correctly defined, interfaces are active, and the EIGRP routing protocol is properly distributing routes across the WAN.
+* <img width="452" height="367" alt="image" src="https://github.com/user-attachments/assets/f93f764b-c7ef-47ff-9506-62450d99a09b" />
+
