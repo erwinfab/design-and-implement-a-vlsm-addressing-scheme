@@ -46,6 +46,8 @@ I accessed the Cisco IOS command-line interface to apply the addressing scheme:
 I performed end-to-end connectivity tests to ensure the network was fully operational. 
 * Verified that all hosts could reach their respective default gateways.
 * Confirmed switch management interfaces were reachable from hosts on different LANs.
+* Regional Router Verification: Performed CLI checks on both the Police and Schools routers to confirm that all LAN and WAN interfaces were 'up/up' with correct VLSM IP assignments.
+* Routing Table Integrity: Confirmed that the routers established a successful routing adjacency (EIGRP), allowing traffic to flow across the point-to-point WAN link.
 
 ---
 
@@ -63,9 +65,13 @@ I performed end-to-end connectivity tests to ensure the network was fully operat
 
 ## Deployment and Configuration Screenshots
 
-*(Upload your screenshots to GitHub and link them here)*
 * **Topology Overview**:
 * <img width="690" height="267" alt="image" src="https://github.com/user-attachments/assets/7b02c7d9-27c1-4c7f-b05e-7bf3c1fd18b2" />
 
-* **CLI Verification**: `![Show IP Interface Brief](link_to_image)`
+* **Police Router CLI Verification**:
+* <img width="641" height="466" alt="image" src="https://github.com/user-attachments/assets/2ad1cf4d-97d7-4d01-b58e-fb010f2eabc7" />
+
+* **Schools Router CLI Verification**:
+* <img width="643" height="465" alt="image" src="https://github.com/user-attachments/assets/c5a4028a-16f1-446d-83ce-a0833b34d803" />
+
 * **Connectivity Test**: `![Ping Success](link_to_image)`
