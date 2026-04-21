@@ -54,13 +54,8 @@ I performed end-to-end connectivity tests to ensure the network was fully operat
 
 ## VLSM Design Table
 
-| Subnet Description | Hosts Needed | CIDR | Subnet Address | Usable Range | Broadcast |
-| :--- | :--- | :--- | :--- | :--- | :--- |
-| **PS-115 LAN** | 47 | /26 | 10.1.1.0 | 10.1.1.1 - 10.1.1.62 | 10.1.1.63 |
-| **PD-2 LAN** | 28 | /27 | 10.1.1.64 | 10.1.1.65 - 10.1.1.94 | 10.1.1.95 |
-| **PD-1 LAN** | 11 | /28 | 10.1.1.96 | 10.1.1.97 - 10.1.1.110 | 10.1.1.111 |
-| **PS-101 LAN** | 5 | /29 | 10.1.1.112 | 10.1.1.113 - 10.1.1.118 | 10.1.1.119 |
-| **WAN Link** | 2 | /30 | 10.1.1.120 | 10.1.1.121 - 10.1.1.122 | 10.1.1.123 |
+<img width="730" height="381" alt="image" src="https://github.com/user-attachments/assets/f040c450-899d-429c-aab4-7f61d61d84d3" />
+
 
 ---
 
