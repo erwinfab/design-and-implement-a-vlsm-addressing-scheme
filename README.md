@@ -65,20 +65,20 @@ I performed end-to-end connectivity tests to ensure the network was fully operat
 * **Topology Overview**:
 <img width="690" height="267" alt="image" src="https://github.com/user-attachments/assets/7b02c7d9-27c1-4c7f-b05e-7bf3c1fd18b2" />
 
---
+---
 * **Police Router CLI Verification**:
 <img width="641" height="466" alt="image" src="https://github.com/user-attachments/assets/2ad1cf4d-97d7-4d01-b58e-fb010f2eabc7" />
 
---
+---
 * **Schools Router CLI Verification**:
 <img width="643" height="465" alt="image" src="https://github.com/user-attachments/assets/c5a4028a-16f1-446d-83ce-a0833b34d803" />
 
---
+---
  * **Layer 3 Routing Verification (Traceroute)**: 
 I used the `tracert` command to map the path taken by packets across the network. This confirms that traffic is correctly exiting the local gateway, traversing the point-to-point WAN link, and reaching the destination subnet as intended by the VLSM design.
 <img width="430" height="360" alt="image" src="https://github.com/user-attachments/assets/15180fe9-181b-4211-b53a-5186fc26b6b5" />
 
---
+---
 * **Connectivity Test**:
 I performed ICMP echo requests (pings) between end-devices in geographically separated LANs. The successful 0% loss rate confirms that the VLSM subnets are correctly defined, interfaces are active, and the EIGRP routing protocol is properly distributing routes across the WAN.
 <img width="452" height="367" alt="image" src="https://github.com/user-attachments/assets/f93f764b-c7ef-47ff-9506-62450d99a09b" />
