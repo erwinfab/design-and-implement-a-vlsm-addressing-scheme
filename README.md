@@ -26,19 +26,19 @@ The customer required an addressing design for a topology consisting of four LAN
 
 ## High-Level Deployment and Configuration Steps
 
-## Step 1: Design the VLSM Addressing Scheme
+**Step 1: Design the VLSM Addressing Scheme**
 To maintain a contiguous network with no unused space, I calculated the subnets in descending order of size. 
 * **Calculation Logic**: For each LAN, I identified the next power of two to determine the subnet mask (e.g., 2^6 = 64 for the 47-host requirement).
 * **Efficiency**: I utilized a **/30** prefix for the point-to-point link between routers to provide the most efficient subnetting possible.
 
-### Step 2: Documentation and IP Allocation
+**Step 2: Documentation and IP Allocation**
 I documented the design in a comprehensive table, assigning specific roles to IP addresses as required by the customer:
 * **Police Router**: Assigned the first usable IP for all interfaces.
 * **Schools Router**: Assigned the first usable IP for LANs and the **last usable** IP for the WAN link.
 * **Switches**: Assigned the second usable IP to the VLAN 1 management interface.
 * **Hosts**: Assigned the last usable IP in the subnet.
 
-### Step 3: CLI Implementation
+***Step 3: CLI Implementation***
 I accessed the Cisco IOS command-line interface to apply the addressing scheme:
 * Configured IP addresses and subnet masks for all physical and virtual interfaces.
 * Enabled interfaces using the `no shutdown` command.
