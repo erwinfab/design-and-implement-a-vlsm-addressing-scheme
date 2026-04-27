@@ -79,7 +79,7 @@ The customer required an addressing design for a topology consisting of four LAN
 ---
 * **Layer 3 Routing Verification (Traceroute)**:
  
--I used the `tracert` command to map the path taken by packets across the network. This confirms that traffic is correctly exiting the local gateway, traversing the point-to-point WAN link, and reaching the destination subnet as intended by the VLSM design.
+- I used the `tracert` command to map the path taken by packets across the network. This confirms that traffic is correctly exiting the local gateway, traversing the point-to-point WAN link, and reaching the destination subnet as intended by the VLSM design.
 <img width="430" height="360" alt="image" src="https://github.com/user-attachments/assets/15180fe9-181b-4211-b53a-5186fc26b6b5" />
 
 ---
