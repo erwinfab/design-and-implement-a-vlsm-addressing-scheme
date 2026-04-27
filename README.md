@@ -35,24 +35,24 @@ The customer required an addressing design for a topology consisting of four LAN
 **Step 2: Documentation and IP Allocation**
 
 * I documented the design in a comprehensive table, assigning specific roles to IP addresses as required by the customer:
-* **Police Router**: Assigned the first usable IP for all interfaces.
-* **Schools Router**: Assigned the first usable IP for LANs and the **last usable** IP for the WAN link.
-* **Switches**: Assigned the second usable IP to the VLAN 1 management interface.
-* **Hosts**: Assigned the last usable IP in the subnet.
+  * **Police Router**: Assigned the first usable IP for all interfaces.
+  * **Schools Router**: Assigned the first usable IP for LANs and the **last usable** IP for the WAN link.
+  * **Switches**: Assigned the second usable IP to the VLAN 1 management interface.
+  * **Hosts**: Assigned the last usable IP in the subnet.
 
 **Step 3: CLI Implementation**
 
 * I accessed the Cisco IOS command-line interface to apply the addressing scheme:
-* Configured IP addresses and subnet masks for all physical and virtual interfaces.
-* Enabled interfaces using the `no shutdown` command.
-* Configured Default Gateways on all switches and end devices to ensure cross-subnet reachability.
+  * Configured IP addresses and subnet masks for all physical and virtual interfaces.
+  * Enabled interfaces using the `no shutdown` command.
+  * Configured Default Gateways on all switches and end devices to ensure cross-subnet reachability.
 
-### Step 4: Verification and Testing
-I performed end-to-end connectivity tests to ensure the network was fully operational. 
-* Verified that all hosts could reach their respective default gateways.
-* Confirmed switch management interfaces were reachable from hosts on different LANs.
-* Regional Router Verification: Performed CLI checks on both the Police and Schools routers to confirm that all LAN and WAN interfaces were 'up/up' with correct VLSM IP assignments.
-* Routing Table Integrity: Confirmed that the routers established a successful routing adjacency (EIGRP), allowing traffic to flow across the point-to-point WAN link.
+**Step 4: Verification and Testing**
+* I performed end-to-end connectivity tests to ensure the network was fully operational. 
+  * Verified that all hosts could reach their respective default gateways.
+  * Confirmed switch management interfaces were reachable from hosts on different LANs.
+  * **Regional Router Verification**: Performed CLI checks on both the Police and Schools routers to confirm that all LAN and WAN interfaces were 'up/up' with correct VLSM IP assignments.
+  * **Routing Table Integrity**: Confirmed that the routers established a successful routing adjacency (EIGRP(Enhanced Interior Gateway Protocol)), allowing traffic to flow across the point-to-point WAN link.
 
 
 
@@ -77,13 +77,15 @@ I performed end-to-end connectivity tests to ensure the network was fully operat
 <img width="643" height="465" alt="image" src="https://github.com/user-attachments/assets/c5a4028a-16f1-446d-83ce-a0833b34d803" />
 
 ---
- * **Layer 3 Routing Verification (Traceroute)**: 
-I used the `tracert` command to map the path taken by packets across the network. This confirms that traffic is correctly exiting the local gateway, traversing the point-to-point WAN link, and reaching the destination subnet as intended by the VLSM design.
+* **Layer 3 Routing Verification (Traceroute)**:
+ 
+* I used the `tracert` command to map the path taken by packets across the network. This confirms that traffic is correctly exiting the local gateway, traversing the point-to-point WAN link, and reaching the destination subnet as intended by the VLSM design.
 <img width="430" height="360" alt="image" src="https://github.com/user-attachments/assets/15180fe9-181b-4211-b53a-5186fc26b6b5" />
 
 ---
 * **Connectivity Test**:
-I performed ICMP echo requests (pings) between end-devices in geographically separated LANs. The successful 0% loss rate confirms that the VLSM subnets are correctly defined, interfaces are active, and the EIGRP routing protocol is properly distributing routes across the WAN.
+
+* I performed ICMP echo requests (pings) between end-devices in geographically separated LANs. The successful 0% loss rate confirms that the VLSM subnets are correctly defined, interfaces are active, and the EIGRP routing protocol is properly distributing routes across the WAN.
 <img width="452" height="367" alt="image" src="https://github.com/user-attachments/assets/f93f764b-c7ef-47ff-9506-62450d99a09b" />
 
 
