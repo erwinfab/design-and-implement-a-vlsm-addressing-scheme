@@ -15,7 +15,7 @@ This project demonstrates the ability to design and implement a complex **Variab
 
 The customer required an addressing design for a topology consisting of four LANs and one point-to-point WAN link. The design had to prioritize efficiency by using the smallest possible subnets that still accommodate the necessary host counts.
 
-## Host Requirements:
+### Host Requirements:
 * **PS-115 LAN**: 47 Addresses
 * **PD-2 LAN**: 28 Addresses
 * **PD-1 LAN**: 11 Addresses
