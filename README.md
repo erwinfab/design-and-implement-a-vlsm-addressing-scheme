@@ -28,10 +28,9 @@ The customer required an addressing design for a topology consisting of four LAN
 
 **Step 1: Design the VLSM Addressing Scheme**
 
-**To maintain a contiguous network with no unused space, I calculated the subnets in descending order of size. 
-
-* **Calculation Logic**: For each LAN, I identified the next power of two to determine the subnet mask (e.g., 2^6 = 64 for the 47-host requirement).
-* **Efficiency**: I utilized a **/30** prefix for the point-to-point link between routers to provide the most efficient subnetting possible.
+* To maintain a contiguous network with no unused space, I calculated the subnets in descending order of size. 
+  * **Calculation Logic**: For each LAN, I identified the next power of two to determine the subnet mask (e.g., 2^6 = 64 for the 47-host requirement).
+  * **Efficiency**: I utilized a **/30** prefix for the point-to-point link between routers to provide the most efficient subnetting possible.
 
 **Step 2: Documentation and IP Allocation**
 
