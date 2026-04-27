@@ -15,18 +15,18 @@ This project demonstrates the ability to design and implement a complex **Variab
 
 The customer required an addressing design for a topology consisting of four LANs and one point-to-point WAN link. The design had to prioritize efficiency by using the smallest possible subnets that still accommodate the necessary host counts.
 
-### Host Requirements:
+## Host Requirements:
 * **PS-115 LAN**: 47 Addresses
 * **PD-2 LAN**: 28 Addresses
 * **PD-1 LAN**: 11 Addresses
 * **PS-101 LAN**: 5 Addresses
 * **WAN Link**: 2 Addresses
 
----
+
 
 ## High-Level Deployment and Configuration Steps
 
-### Step 1: Design the VLSM Addressing Scheme
+## Step 1: Design the VLSM Addressing Scheme
 To maintain a contiguous network with no unused space, I calculated the subnets in descending order of size. 
 * **Calculation Logic**: For each LAN, I identified the next power of two to determine the subnet mask (e.g., 2^6 = 64 for the 47-host requirement).
 * **Efficiency**: I utilized a **/30** prefix for the point-to-point link between routers to provide the most efficient subnetting possible.
@@ -51,14 +51,14 @@ I performed end-to-end connectivity tests to ensure the network was fully operat
 * Regional Router Verification: Performed CLI checks on both the Police and Schools routers to confirm that all LAN and WAN interfaces were 'up/up' with correct VLSM IP assignments.
 * Routing Table Integrity: Confirmed that the routers established a successful routing adjacency (EIGRP), allowing traffic to flow across the point-to-point WAN link.
 
----
+
 
 ## VLSM Design Table
 
 <img width="730" height="381" alt="image" src="https://github.com/user-attachments/assets/f040c450-899d-429c-aab4-7f61d61d84d3" />
 
 
----
+
 
 ## Deployment and Configuration Screenshots
 
