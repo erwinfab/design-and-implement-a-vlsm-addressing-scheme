@@ -13,7 +13,7 @@ This project demonstrates the ability to design and implement a complex **Variab
 
 ## Objectives and Scenario
 
-The customer required an addressing design for a topology consisting of four LANs and one point-to-point WAN link. The design had to prioritize efficiency by using the smallest possible subnets that still accommodate the necessary host counts.
+The customer required an addressing design for a topology consisting of four LANs (Local Area Networks) and one point-to-point WAN (Wide Area Network) link. The design had to prioritize efficiency by using the smallest possible subnets that still accommodate the necessary host counts.
 
 ### Host Requirements:
 * **PS-115 LAN**: 47 Addresses
